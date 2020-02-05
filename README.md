@@ -28,5 +28,5 @@ Stable functions are also available as source files [here](https://github.com/ge
   Returns a `GEOMETRY_DUMP` having a `path INT[]` and `geometry GEOMETRY` member.
   <br>
   <br>
-  ##### `SETOF GEOMETRY_DUMP _ST_DumpSegments(geom GEOMETRY, len_frac FLOAT)`
+  ##### `SETOF GEOMETRY_DUMP _ST_DumpSubstrings(geom GEOMETRY, len_frac FLOAT)`
   Utility C function to create segments from the linear component of `geom` using a fraction (`len_frac`) in sequence. Get's called by `ST_LineSubstringsByLength` & `ST_LineSubstringBySegments`.
