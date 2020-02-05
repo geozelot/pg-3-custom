@@ -2,7 +2,7 @@
 
 ##### This is a rebased clone of the latest stable ([stable-3.0](https://github.com/postgis/postgis/tree/stable-3.0)) of the [PostGIS GitHub mirror](https://github.com/postgis/postgis/), where I add custom functions and experiment with.
 
-##### All credits go to the original source [authors](https://github.com/postgis/postgis/authors.git)!
+##### All credits go to the original source [authors](https://github.com/postgis/postgis/authors.git)! Refer to the [licenses](https://github.com/postgis/postgis/LICENSE.txt) of the project.
 ____
 
 ### Custom AddOns
