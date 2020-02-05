@@ -100,6 +100,8 @@ PG_OBJS= \
 	lwgeom_triggers.o \
 	lwgeom_dump.o \
 	lwgeom_dumppoints.o \
+	lwgeom_dump_segments.o \
+	lwgeom_dump_substrings.o \
 	lwgeom_functions_lrs.o \
 	lwgeom_functions_temporal.o \
 	lwgeom_rectree.o \
@@ -179,12 +181,6 @@ PERL=@PERL@
 # This is to workaround a bug in PGXS 8.4 win32 link line,
 # see http://trac.osgeo.org/postgis/ticket/1158#comment:57
 SHLIB_LINK := $(SHLIB_LINK_F) $(SHLIB_LINK)
-
-# NOTE: setting LDFLAGS explicitly here avoids getting the
-# link line polluted by unrelated PostgreSQL switches that
-# may be confusing and out-of-control for the builder of
-# PostGIS
-LDFLAGS = @LDFLAGS@
 
 # If REGRESS=1 passed as a parameter, change the default install paths
 # so that no prefix is included. This allows us to relocate to a temporary
