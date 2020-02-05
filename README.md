@@ -30,3 +30,26 @@ Stable functions are also available as source files [here](https://github.com/ge
   <br>
   ##### `SETOF GEOMETRY_DUMP _ST_DumpSubstrings(geom GEOMETRY, len_frac FLOAT)`
   Utility C function to create segments from the linear component of `geom` using a fraction (`len_frac`) in sequence. Get's called by `ST_LineSubstringsByLength` & `ST_LineSubstringBySegments`.
+
+___
+
+### Build (Linux)
+
+Follows the standard procedure for installing PostGIS from repository source; make sure you have the following libs installed:
+
+* libtool
+* autotools-dev
+* automake
+
+Clone this repo and install:
+
+```
+$ git clone https://github.com/geozelot/pg-custom.git
+
+$ cd pg-custom
+
+$ ./autogen.sh
+$ ./configure
+
+$ make && make install
+```
